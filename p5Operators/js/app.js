@@ -35,7 +35,7 @@ console.log(Bmi);
 /*Implement a program that takes a number input representing seconds and converts it to minutes and remaining seconds, then displays the result.*/
 
 let InputInSeconds = 111;
-let InputInMinSec;
+
 let OutputInMin= Math.floor(InputInSeconds/60);
 console.log(OutputInMin);
 let OutputInMinAndSec= OutputInMin + "(min)" +  InputInSeconds% 60+ "(sec) ";
