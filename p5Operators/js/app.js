@@ -16,7 +16,7 @@ console.log(output);
 
 // A = π r²;
 let cirkleRadius= 2;
-let cirkleArea= (cirkleRadius*cirkleRadius) * 3.14;
+let cirkleArea= Math.PI* Math.pow(cirkleRadius,2);
 console.log(cirkleArea );
 
 let numberInput=11;
@@ -26,15 +26,18 @@ console.log(negativeOutput);
 // Input: 70, 1,82 Output: 21,13...
 // Bmi = 1,82* 1,82/ 70
 
-let HeightCm = 1.82;
+let HeightM = 1.82;
 let Weight= 70;
 
-let Bmi= Weight/(HeightCm* HeightCm);
+let Bmi= Weight/ Math.pow(HeightM, 2);
 console.log(Bmi);
 
-// a'a + b*b= c*c;
+/*Implement a program that takes a number input representing seconds and converts it to minutes and remaining seconds, then displays the result.*/
 
-
-
-
+let InputInSeconds = 111;
+let InputInMinSec;
+let OutputInMin= Math.floor(InputInSeconds/60);
+console.log(OutputInMin);
+let OutputInMinAndSec= OutputInMin + "(min)" +  InputInSeconds% 60+ "(sec) ";
+console.log(OutputInMinAndSec);
 
