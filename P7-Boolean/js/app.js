@@ -22,7 +22,7 @@ else {
 
 //Vad det gör: Detta kräver inbyggda readline-modulen i Node.js.
 // readline-modulen används för att läsa in data från standardinput, som till exempel från en terminal eller kommandorad.
-  const readline = require('readline');
+  /* const readline = require('readline');
   //Vad det gör: Skapar ett gränssnitt (r1) för att läsa och skriva till kommandoraden.
 // input: process.stdin gör att vi kan ta emot användarens inmatning, och
 // output: process.stdout gör att vi kan skriva ut saker till terminalen.
@@ -87,3 +87,79 @@ else {
     }
     r1.close();
   })
+*/
+
+/*function forward1() {
+  console.log("Move Forward.");
+}
+function forward2() {
+  console.log("Move Forward." );
+  console.log("Move Forward." );
+}
+function forward3() {
+  console.log("Move Forward." );
+  console.log("Move Forward." );
+  console.log("Move Forward." );
+}
+function right1() {
+
+  console.log("turn right");
+}
+function right2() {
+
+  console.log("turn right");
+  console.log("turn right");
+}
+function right3() {
+
+  console.log("turn right");
+  console.log("turn right");
+  console.log("turn right");
+}
+
+
+let letsWalk=true;
+while (letsWalk)
+{
+forward3()
+right2()
+forward3()
+right3()
+forward3()
+right3()
+forward1()
+  right2()
+forward1()
+letsWalk = false;
+
+}*/
+const nr =4;
+
+// funktion som multiplicerar värder med sig självt.
+ function doubleNumber(NumberTimesItself){
+
+return NumberTimesItself*nr;
+
+ }
+
+console.log(doubleNumber(nr));
+
+ // funktion that adds two values and defines the avarage value. (2,6)
+
+function avarageValue(num1, num2){
+let result= (num1+num2)/2;
+  return result;
+}
+let output= avarageValue(2, 6) ;
+console.log(output);
+
+// Welcom Been Ting.
+
+function stringMessage(string1, string2)
+{
+
+  let result= "Welcome "+ string1 +" "+ string2;
+  return result;
+}
+let Output= stringMessage("Ben", "Ting");
+console.log(Output);
